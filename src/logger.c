@@ -448,7 +448,7 @@ void log_guess(char *login, char *uid, char *ciphertext, char *rep_plain,
 		size_t len;
 		int command_retval;
 
-		len = strlen(cfg_exec_on_cracked_password) 
+		len = strlen(cfg_exec_on_cracked_password) + 1
 			+ (cfg_pass_login ? strlen(login) + 4 : 0) 
 			+ (cfg_pass_plain_pwd ? strlen(rep_plain) + 4 : 0);
 
